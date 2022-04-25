@@ -1,0 +1,247 @@
+html, body {
+  /*display: flex; */
+  /*align-items: center;
+  justify-content: center;*/
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior:smooth;
+}
+
+body {
+  background: white;
+}
+
+/* Style buttons */
+.btn {
+
+  border:2px solid rgb(65, 104, 109);
+  /*background-color: rgb(65, 104, 109);*/
+  background-color:white;
+  border-radius:25px;
+  color: black;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family:"Roboto", sans-serif;
+  font-weight:bold;
+  margin-right:15px;
+  float:right;
+  text-decoration:none;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(65, 104, 109);
+  color:white;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 275px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  /*background-color: darkcyan;*/
+  background-color: rgb(65, 104, 109);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 5px 8px 6px 80px;
+  display:flex;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "Roboto Condensed", sans-serif;
+  color:rgb(213, 230, 230);
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f198;
+}
+
+.profile-picture {
+  border-radius:50%;
+  margin-top:40px;
+  margin-left: 60px;
+  margin-bottom:10px;
+}
+
+.frame {
+  position:absolute;
+  border-radius:50%;
+  background-color:rgb(93, 133, 133);
+  display:inline-block;
+  height:165px;
+  width:165px;
+  margin-top:32px;
+  margin-left: 53px;
+  margin-bottom:10px;
+  z-index:-1;
+
+}
+
+.spotifyplayer {
+  margin-top:7px;
+  margin-left:7px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.spotifyframe {
+  position:absolute;
+  border-top-left-radius:25px;
+  border-top-right-radius: 25px;
+  background-color: rgb(93, 133, 133);
+  display:inline-block;
+  height:290px;
+  width:275px;
+  margin-top:0px;
+  margin-left: 0px;
+  margin-bottom:0px;
+  z-index:-1;
+
+}
+
+.sidenav p {
+  padding: 70px 0px 0px 50px;
+  display:flex;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Hind Madurai", sans-serif;
+  color: white;
+  display: block;
+  margin:5px;
+}
+
+.main {
+  margin-left: 300px;
+  padding: 0px 10px;
+}
+
+.name {
+  font-family: "Graphik", sans-serif;
+  font-size: 50px;
+  margin-bottom: 2px;
+}
+
+.left {
+  align-items: left;
+  justify-content: left;
+}
+
+.residence, .email {
+  margin:0;
+  padding:0;
+  display:inline;
+}
+
+.residence{
+  padding-right:3em;
+}
+
+.blockhighlight:hover {
+  /*background-color:rgba(189, 217, 219, 0.979);*/
+  background-color:rgb(220, 236, 236);
+}
+
+.role, .company, .jobdescription, .projectname, .projectdescription {
+  margin-left:10px;
+}
+
+.role{
+  margin-bottom:0;
+}
+
+.projectname {
+  margin-top:0;
+}
+.company, .interestdescription {
+  font-family:"Roboto", sans-serif;
+  /*font-style:italic;*/
+  font-weight:lighter;
+  font-size:18px;
+  margin-top:0;
+}
+
+.role, .date, .interestname {
+  display:inline;
+}
+
+.location {
+  float:right;
+  margin-right:10px;
+}
+
+.date {
+  float:right;
+  font-weight:lighter;
+  color:rgb(104, 102, 102);
+  margin-right:10px;
+}
+
+.jobdescription, .projectdescription {
+  margin-right:300px;
+  color:rgb(104, 102, 102);
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 17px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook, .fa-instagram, .fa-linkedin, .fa-envelope, .fa-spotify{
+  background: rgb(65, 104, 109);
+  color: white;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 3em 0;
+  padding: 0;
+}
+
+.interestleft, .interestmiddle, .interestright {
+  display:inline-block;
+  padding:30px;
+}
+
+.interestleft:hover, .interestmiddle:hover, .interestright:hover {
+  background-color:rgb(220, 236, 236);
+}
+
+#pfp-wrapper .text {
+  position:absolute;
+  top:55px;
+  left:80px;
+  font-family:"Roboto Condensed",sans-serif;
+  font-size:16px;
+  color:white;
+  visibility:hidden;
+  margin-bottom:0;
+  }
+  
+  #pfp-wrapper:hover .text {
+  visibility:visible;
+  }
+
+  #pfp-wrapper:hover .profile-picture {
+    opacity:0.8;
+  }
